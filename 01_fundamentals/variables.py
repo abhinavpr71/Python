@@ -14,9 +14,13 @@ print(type(is_learning))
 #type conversion - changing a value from one data type to antoher.
 print(int('25'))  
 
-first_num = input('Enter First number : ')
+first_num = int(input('Enter First number : '))
 second_num = float(input("Enter Second number : "))
 
-print(first_num)
-print(second_num)
 print(type(first_num))
+print(type(second_num))
+
+total = first_num + second_num
+total = str(total)
+print(total)
+print(type(total))
