@@ -103,5 +103,46 @@
 # print(a is c)
 
 
+# STRING SLICING
+# language = 'JavaScript'
+
+# print(language[0:4])
+# print(language[4:10])
+# print(language[0:4])
+# print(language[4:])
+# print(language[::-1])
+
+# String Methods
+
+# upper() , lower() , strip() , replace()
+
+# message = 'python is bad'
+# updated_message = message.replace('bad', 'good')
+# print(updated_message)
+
+# split() = converts a string into list
+# join() = combines list elements into a string
+
+# sentence = 'Python is powerful'
+
+# words = sentence.split()
+# print(words)
+
+# new_sentence = "-".join(words)
+# print(new_sentence)
 
 
+
+# DATA TYPES /////////////
+
+# name = "Alex"
+# age = 22
+# height = 5.8
+# is_student = True
+# skills = ["Python", "JavaScript"]
+
+# print(type(name))
+# print(type(age))
+# print(type(height))
+# print(type(is_student))
+# print(type(skills))
