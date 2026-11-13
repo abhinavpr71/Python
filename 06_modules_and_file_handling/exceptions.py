@@ -1,0 +1,13 @@
+# ////////////// try and except ////////////////
+
+try:
+    num = int(input('Enter a number : '))
+    print(10/num)
+
+except ZeroDivisionError:
+    print('Cannot divide by zero!')
+except ValueError:
+    print('Enter a valid number!')
+
+finally:
+    print('Program execution completed')
