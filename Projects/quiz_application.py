@@ -1,29 +1,43 @@
+
 qustions = [
     {'question' : "What is the capital of Japan" ,
-     'opitons' : ['A. Seoul' ,'B. Tokyo' , 'C. Beijing' , 'D. Bagkok'],
+     'options' : ['A. Seoul' ,'B. Tokyo' , 'C. Beijing' , 'D. Bagkok'],
      'answer' : 'B'},
 
      {'question' : "Which data type stores key-value pairs?" ,
-          'opitons' : ['A. List' ,'B. Tuple' , 'C. Dictionary' , 'D. Set'],
+          'options' : ['A. List' ,'B. Tuple' , 'C. Dictionary' , 'D. Set'],
           'answer' : 'C'},
 
     {'question' : "What does len() returns?" ,
-         'opitons' : ['A. Length' ,'B. Data type' , 'C. Memory size' , 'D. Index'],
+         'options' : ['A. Length' ,'B. Data type' , 'C. Memory size' , 'D. Index'],
          'answer' : 'A'},
 
     {'question' : "Which keyword skips the current loop iteration?" ,
-         'opitons' : ['A. break' ,'B. pass' , 'C. stop' , 'D. continue'],
+         'options' : ['A. break' ,'B. pass' , 'C. stop' , 'D. continue'],
          'answer' : 'D'},
 
     {'question' : "Which symbol is used for exponetiation in Pyhton" ,
-         'opitons' : ['A. ^' ,'B. **' , 'C. //' , 'D. %'],
+         'options' : ['A. ^' ,'B. **' , 'C. //' , 'D. %'],
          'answer' : 'B'}
     
 ]
 
+score = 0
 
-for i in qustions:
-    print(i)
+for question in qustions:
+    print(question['question'])
+    for option in question['options']:
+        print(option)
 
-    
+    user_answer = input('Enter your answer : ').capitalize()
+
+    if user_answer == question['answer'] :
+        print('Correct')
+        score += 1
+    else:
+        print(f'Wrong! {question["answer"]} is the correct answer.')
+
+print(f'Score : {score} / 5')
+
+
 
