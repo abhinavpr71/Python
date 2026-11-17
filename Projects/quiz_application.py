@@ -1,5 +1,5 @@
 
-qustions = [
+questions = [
     {'question' : "What is the capital of Japan" ,
      'options' : ['A. Seoul' ,'B. Tokyo' , 'C. Beijing' , 'D. Bagkok'],
      'answer' : 'B'},
@@ -24,7 +24,7 @@ qustions = [
 
 score = 0
 
-for question in qustions:
+for question in questions:
     print(question['question'])
     for option in question['options']:
         print(option)
@@ -38,6 +38,10 @@ for question in qustions:
         print(f'Wrong! {question["answer"]} is the correct answer.')
 
 print(f'Score : {score} / 5')
+
+percentage = score / len(questions) * 100
+
+print(f'Percentage : {percentage}')
 
 
 
